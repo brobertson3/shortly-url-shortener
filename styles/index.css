@@ -1,0 +1,28 @@
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Desktop Header */
+#navigation-header {
+  display: flex;
+  justify-content: space-between;
+  /* display: none; */
+}
+
+#navigation-header ul {
+  display: inline-block;
+}
+
+#navigation-header li {
+  display: inline-block;
+}
+
+#main-links li {
+  display: inline-block;
+}
+
+/* Mobile Header */
