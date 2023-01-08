@@ -4,6 +4,7 @@
 <head>
   <title>Shortly</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="./styles/index.css">
 </head>
 
@@ -11,8 +12,8 @@
   <main>
     <header>
       <!-- Want to display the desktop menu -->
-      <nav id="navigation-header">
-        <a href="/"><img src="logo.svg" /></a>
+      <nav id="navigation-header-desktop">
+        <a href="/"><img src="images/logo.svg" /></a>
         <ul id="main-links">
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
@@ -20,12 +21,26 @@
         </ul>
         <ul id="cta-links">
           <li><a href="#">Login</a></li>
-          <li><a href="#">Sign Up</a></li>
+          <li><a href="#" class="styled-button rounded-button">Sign Up</a></li>
         </ul>
       </nav>
 
       <!-- Want to display the mobile menu -->
+      <nav id="navigation-header-mobile">
+        <a href="/"><img src="images/logo.svg" /></a>
+        <button>
+          <div class="hamburger-menu-line"></div>
+          <div class="hamburger-menu-line"></div>
+          <div class="hamburger-menu-line"></div>
+        </button>
+      </nav>
+
+      <!-- Hero section -->
+      <section id="hero">
+        <div id="hero-image"></div>
+      </section>
     </header>
+
   </main>
 </body>
 
