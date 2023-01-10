@@ -130,6 +130,7 @@ button.styled-button {
 
 #hero article {
   margin: 10px 25px;
+  width: 100%;
 }
 
 #hero #hero-image {
@@ -153,7 +154,7 @@ button.styled-button {
 }
 
 article#url-input-container {
-  width: auto;
+  width: calc(100% - 40px);
   padding: 20px;
   background-color: hsl(257, 7%, 63%);
   background-image: url("../images/bg-shorten-mobile.svg");
@@ -254,6 +255,12 @@ article#url-input-container {
 }
 
 /* Media Queries */
+@media screen and (min-width: 678px) {
+  #hero #hero-image {
+    background-position: 50%;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
 }
