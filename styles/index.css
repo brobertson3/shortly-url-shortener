@@ -1,21 +1,36 @@
+:root {
+  --clr-primary-200: hsl(180, 66%, 49%);
+  --clr-primary-800: hsl(257, 27%, 26%);
+
+  --clr-secondary: hsl(0, 87%, 67%);
+
+  --clr-neutral-200: hsl(0, 0%, 75%);
+  --clr-neutral-400: hsl(257, 7%, 63%);
+  --clr-neutral-700: hsl(255, 11%, 22%);
+  --clr-neutral-800: hsl(260, 8%, 14%);
+
+  --ff-default: "Poppins", serif;
+}
+
 html {
   font-size: 16px;
-  font-family: "Poppins", serif;
-  color: hsl(0, 0%, 75%);
+  font-family: var(--ff-default);
+  color: var(--clr-neutral-200);
   font-weight: 500;
 }
 
 body {
   margin: 0;
+  min-width: 375px;
 }
 
 a {
   text-decoration: none;
-  color: hsl(0, 0%, 75%);
+  color: var(--clr-neutral-200);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: hsl(257, 27%, 26%);
+  color: var(--clr-primary-800);
   font-weight: 700;
   text-align: center;
 }
@@ -26,7 +41,7 @@ header nav {
 
 /* generic button */
 .styled-button {
-  background-color: hsl(180, 66%, 49%);
+  background-color: var(--clr-primary-200);
   padding: 15px 30px;
   color: #fff;
   font-size: 1.2rem;
@@ -73,6 +88,11 @@ button.styled-button {
   display: inline-block;
 }
 
+#main-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 #main-links {
   flex-grow: 6;
 }
@@ -112,7 +132,7 @@ button.styled-button {
 
 #navigation-header-mobile .hamburger-menu-line {
   height: 4px;
-  background-color: hsl(0, 0%, 75%);
+  background-color: var(--clr-neutral-200);
   margin-bottom: 7px;
 }
 
@@ -156,7 +176,7 @@ button.styled-button {
 article#url-input-container {
   width: calc(100% - 40px);
   padding: 20px;
-  background-color: hsl(257, 7%, 63%);
+  background-color: var(--clr-neutral-400);
   background-image: url("../images/bg-shorten-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,7 +212,7 @@ article#url-input-container {
   position: relative;
   background-color: #f3f3f3;
   padding-top: 140px;
-  padding: 140px 25px 25px;
+  padding: 140px 25px 75px;
   z-index: 20;
 }
 
@@ -216,7 +236,7 @@ article#url-input-container {
   position: absolute;
   width: 5px;
   height: calc(100% - 450px);
-  background-color: hsl(180, 66%, 49%);
+  background-color: var(--clr-primary-200);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -243,7 +263,7 @@ article#url-input-container {
   position: absolute;
   top: -40px;
   border-radius: 50%;
-  background-color: hsl(257, 27%, 26%);
+  background-color: var(--clr-primary-800);
   width: 60px;
   height: 60px;
   padding: 10px;
@@ -252,6 +272,28 @@ article#url-input-container {
   align-items: center;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#cta-container {
+  background-color: var(--clr-neutral-400);
+  background-image: url("../images/bg-boost-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 75px 25px;
+}
+
+#cta-container h2 {
+  color: #fff;
+  margin-top: 0;
+}
+
+#cta-container a {
+  color: #fff;
+}
+
+#cta-container button {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Media Queries */
